@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shaik's Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #fffdf9, #f7efe2);
+    font-family: 'Playfair Display', serif;
+}
+
+/* MAIN CARD */
+.page {
+    position: relative;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background: #fffdf9;
+    border-radius: 25px;
+    border: 2px solid #d4af37;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+/* LOGO CORNERS */
+.corner {
+    position: absolute;
+    width: 70px;
+    opacity: 0.8;
+}
+
+.top-left { top: 15px; left: 15px; }
+.top-right { top: 15px; right: 15px; }
+.bottom-left { bottom: 15px; left: 15px; }
+.bottom-right { bottom: 15px; right: 15px; }
+
+/* HEADER */
+h1 {
+    color: #b8963a;
+    font-size: 36px;
+}
+
+.divider {
+    width: 120px;
+    height: 2px;
+    background: #d4af37;
+    margin: 10px auto 20px;
+}
+
+/* INTRO */
+.intro {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* NAMES */
+.names {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* TWO COLUMN */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    width: 48%;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    padding: 20px;
+    background: #fffaf3;
+}
+
+.card h2 {
+    color: #b8963a;
+}
+
+/* FAMILY */
+.family {
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+.family b {
+    color: #b8963a;
+}
+
+/* QR */
+.qr img {
+    width: 140px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #d4af37;
+    color: white;
+    cursor: pointer;
+}
+
+/* URDU */
+#urdu {
+    display: none;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    direction: rtl;
+    font-size: 20px;
+}
+
+/* AYAH */
+.ayah {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    direction: rtl;
+    font-size: 20px;
+    line-height: 2;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 520px;
+    color: #b8963a;
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #d4af37;
+}
+
+/* ✅ CALLIGRAPHY STYLE (ONLY NEW ADDITION) */
+.ayah-ref {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    color: #b8963a;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- LOGOS -->
+<img src="logo.png" class="corner top-left">
+<img src="logo.png" class="corner top-right">
+<img src="logo.png" class="corner bottom-left">
+<img src="logo.png" class="corner bottom-right">
+
+<button onclick="toggleLang()">English / اردو</button>
+
+<!-- ENGLISH -->
+<div id="eng">
+
+<h1>Shaik's Wedding</h1>
+<div class="divider"></div>
+
+<p><b>In the name of Allah, the Most Beneficent, the Most Merciful</b></p>
+
+<div class="ayah">
+وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ
+<span class="ayah-ref">سورة الروم ٢١:٣٠</span>
+</div>
+
+<div class="intro">
+Mrs. <span class="highlight">Kousar Begum (MA., TTC)</span>, Secondary Grade Teacher  
+and Mr. <span class="highlight">Shaik Vali</span><br><br>
+
+cordially request the honour of your presence to grace the joyous occasion of the Wedding ceremony of their beloved son<br><br>
+
+<span class="highlight">Barkhurdar</span><br>
+
+<div class="names">Fairoz Shaik (Software Engineer)</div>
+
+with<br>
+
+<span class="highlight">Dukhtar-e-nek-Akhtar</span><br>
+
+<div class="names">Halima Sadiya (Aalima)</div>
+
+(Daughter of Mr. Mastan Vali Shaik)
+</div>
+
+<div class="sections">
+
+<div class="card">
+<h2>🕌 Nikah</h2>
+<p><b>25th April, 2026</b></p>
+<p><b>11:30 AM</b></p>
+
+Moosa Masjid, Namburu
+
+<hr>
+
+<b>Lunch</b><br>
+Meghana Function Hall,<br>
+Namburu
+</div>
+
+<div class="card">
+<h2>🎉 Walima</h2>
+<p><b>26th April, 2026</b></p>
+<p><b>1:00 PM onwards</b></p>
+
+Residency Function Hall,<br>
+Guntur
+
+<div class="qr">
+<img src="Venue.png">
+</div>
+</div>
+
+</div>
+
+<div class="family">
+<b>With blessings and prayers of our beloved family</b><br><br>
+
+Shaik Farheen Begum<br>
+Shaik Altaf Basha<br>
+Md. Sibgatulla<br>
+Md. Khaisar Begum<br>
+Md. Faizul Rahman
+</div>
+
+<p style="margin-top:20px;">Your presence will be a blessing for us</p>
+
+</div>
+
+<!-- URDU -->
+<div id="urdu">
+
+<h1>دعوتِ شادی</h1>
+<div class="divider"></div>
+
+<p><b>بسم اللہ الرحمن الرحیم</b></p>
+
+<div class="ayah">
+وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ
+<span class="ayah-ref">سورة الروم ٢١:٣٠</span>
+</div>
+
+<div class="names">فیروز شیخ</div>
+<p>کے ساتھ</p>
+<div class="names">حلیمہ سعدیہ</div>
+
+<div class="sections">
+
+<div class="card">
+<h2>نکاح</h2>
+11:30 بجے<br>
+Moosa Masjid, Namburu
+
+<hr>
+کھانا<br>
+Meghana Function Hall
+</div>
+
+<div class="card">
+<h2>ولیمہ</h2>
+دوپہر 1 بجے سے<br>
+Residency Function Hall
+
+<div class="qr">
+<img src="Venue.png">
+</div>
+</div>
+
+</div>
+
+<div class="family">
+<b>اپنوں کی دعاؤں کے ساتھ</b><br><br>
+
+Shaik Farheen Begum<br>
+Shaik Altaf Basha<br>
+Md. Sibgatulla<br>
+Md. Khaisar Begum<br>
+Md. Faizul Rahman
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggleLang() {
+    const eng = document.getElementById("eng");
+    const urd = document.getElementById("urdu");
+
+    if (eng.style.display === "none") {
+        eng.style.display = "block";
+        urd.style.display = "none";
+    } else {
+        eng.style.display = "none";
+        urd.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
